@@ -1,4 +1,4 @@
-if (typeof window !== "undefined") {
+
   let todoItemsContainer = document.getElementById("todoItemsContainer");
   let todoList = getTodoListFromLocalStorage();
   let todosCount = todoList.length;
@@ -90,4 +90,5 @@ if (typeof window !== "undefined") {
     todoList[i].isChecked = !todoList[i].isChecked;
     localStorage.setItem("todoList", JSON.stringify(todoList));
   }
-}
+
+
